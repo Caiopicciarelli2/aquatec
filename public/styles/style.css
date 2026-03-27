@@ -1,15 +1,20 @@
 /* Adicionar aqui toda a estilização criada para sua aplicação. */
+
 /*font estilo*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif;
 }
 
-.header{
+/*
+index main
+*/
+
+.header {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,38 +23,39 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.200);
 }
 
-.h-container{
+.h-container-login, .c-container {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
     height: 100%;
     background-color: black;
-    border-bottom: 4px solid rgb(79, 163, 163)
+    border-bottom: 4px solid rgb(79, 163, 163);
+    padding: 0 2rem;
 }
 
-.h-container h1{
-    color:  rgb(79, 163, 163)
+.h-container-login h1, .c-container h1 {
+    color: rgb(79, 163, 163)
 }
 
-.h-container ul{
+.h-container-login ul, .c-container ul {
     display: flex;
     list-style: none;
     gap: 2vw;
 }
 
-.h-container ul li{
+.h-container-login ul li, .c-container ul li {
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 400;
     color: rgb(190, 190, 99);
 }
 
-.h-container ul li a{
+.h-container-login ul li a, .c-container ul a {
     text-decoration: none;
     color: rgb(190, 190, 99);
 }
 
-.banner{
+.banner {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -58,7 +64,7 @@
     background-image: url('../assets/imgs/bg-jelly-fish-para-home.png');
 }
 
-.b-container{
+.b-container {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -66,18 +72,18 @@
     width: 15%;
 }
 
-.b-container p{
+.b-container p {
     font-size: 2rem;
     text-align: left;
     color: white;
     font-weight: 300;
 }
 
-.b-container p span{
+.b-container p span {
     font-weight: 700;
 }
 
-.social{
+.social {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -86,7 +92,7 @@
     border-bottom: 1px solid;
 }
 
-.s-container{
+.s-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -94,7 +100,7 @@
     width: 80%;
 }
 
-.boxes{
+.boxes {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -102,7 +108,7 @@
     width: 100%;
 }
 
-.box{
+.box {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -112,37 +118,190 @@
     gap: 2vh;
 }
 
-.box h4{
+.box h4 {
     font-size: 1.2rem;
     font-weight: 600;
     color: #e40b53;
 }
 
-.box p{
+.box p {
     text-align: center;
     font-weight: 600;
     color: rgba(0, 0, 0, 0.600);
     max-width: 50%;
 }
 
-.box img{
+.box img {
     height: 110px;
 }
 
-.footer{
+.footer {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 12.8vh;
     text-align: center;
-    background-color: #3FA7B3;;
+    background-color: #3FA7B3;
 }
 
-.f-container{
+.f-container {
     color: white;
 }
 
-.f-container h4{
+.f-container h4 {
     font-weight: 400;
+}
+
+/*
+Login
+*/
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+    width: 100%;
+    background-image: url('../assets/imgs/bg-jelly-fish-para-home.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.agora a{
+    font-weight: 800;
+}
+
+.container-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 50%;
+    width: 50%;
+    border: 1px solid white;
+    border-radius: 0.3rem;
+    background-color: white;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    height: 90%;
+    width: 90%;
+}
+
+.card h2{
+    font-size: 2rem;
+    color: #e40b537a;
+    font-weight: 600;
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80%;
+    width: 100%;
+}
+
+.campo{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 85%;
+    height: 30%;
+    gap: 0.3rem;
+}
+
+.campo span{
+    font-size: 0.9rem;
+    color: #e40b5370;
+    font-weight: 700;
+}
+
+.campo input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 45%;
+    border: 1px solid #3FA7B3;
+    border-radius: 0.3rem;
+    text-align: center;
+}
+
+.footer-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 4.9vh;
+    text-align: center;
+    background-color: #3FA7B3;
+}
+
+.botao{
+    background-color: #e40b53;
+    color: white;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    padding: 0.3rem 1.5rem;
+    border: 1px solid;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+/*cadastro*/
+
+.container-cadastro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 80%;
+    width: 50%;
+    border: 1px solid white;
+    border-radius: 0.3rem;
+    background-color: white;
+}
+
+.card-c{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 90%;
+    width: 90%;
+}
+
+.card-c h2{
+    font-size: 2rem;
+    color: #e40b537a;
+    font-weight: 600;
+}
+
+.botao-c{
+    background-color: #e40b53;
+    color: white;
+    font-weight: 600;
+    padding: 0.3rem 1.5rem;
+    border: 1px solid;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.footer-cadastro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 4.9vh;
+    text-align: center;
+    background-color: #3FA7B3;
 }
