@@ -23,7 +23,7 @@ index main
     border-bottom: 1px solid rgba(0, 0, 0, 0.200);
 }
 
-.h-container-login, .c-container {
+.h-container, .h-container-login, .c-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -34,23 +34,23 @@ index main
     padding: 0 2rem;
 }
 
-.h-container-login h1, .c-container h1 {
+.h-container h1, .h-container-login h1, .c-container h1 {
     color: rgb(79, 163, 163)
 }
 
-.h-container-login ul, .c-container ul {
+.h-container ul, .h-container-login ul, .c-container ul {
     display: flex;
     list-style: none;
     gap: 2vw;
 }
 
-.h-container-login ul li, .c-container ul li {
+.h-container ul li, .h-container-login ul li, .c-container ul li {
     font-size: 1rem;
     font-weight: 400;
     color: rgb(190, 190, 99);
 }
 
-.h-container-login ul li a, .c-container ul a {
+.h-container ul li a, .h-container-login ul li a, .c-container ul a {
     text-decoration: none;
     color: rgb(190, 190, 99);
 }
